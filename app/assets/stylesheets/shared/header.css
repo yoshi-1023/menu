@@ -1,0 +1,84 @@
+.header {
+  width: 100vw;
+  display: flex;
+  background-color: darkorange;
+  margin-bottom: 48px;
+  padding: 20px 10px;
+  
+}
+
+.header-inner {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: darkorange;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  color: #333333;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0.4em 1.6em;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  color: #333333;
+}
+
+
+.logout {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  color: #333333;
+}
+
+.login {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  color: #333333;
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  color: #333333;
+}
