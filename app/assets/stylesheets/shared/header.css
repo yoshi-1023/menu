@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   display: flex;
-  background-color: darkorange;
+  background-color: blanchedalmond;
   margin-bottom: 48px;
   padding: 20px 10px;
   
@@ -10,7 +10,7 @@
 .header-inner {
   width: 1024px;
   margin: 0 auto;
-  background-color: darkorange;
+  background-color: blanchedalmond;
 }
 
 .nav {
@@ -31,54 +31,55 @@
 .user-nickname {
   text-decoration: none;
   font-size: 14px;
-  padding: 0.4em 1.6em;
-}
-
-.nav-btn {
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 14px;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #87CEFA solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
+  padding: 6px 18px;
   color: #333333;
 }
 
-
-.logout {
+.recipe-btn {
   display: inline-block;
-  padding: 0.4em 1.6em;
+  padding: 6px 18px;
   font-size: 14px;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px black solid;
   border-radius: 3px;
-  transition: 0.4s ease;
   color: #333333;
+  background-color: blanchedalmond;
 }
 
-.login {
+
+.logout-btn {
   display: inline-block;
-  padding: 0.4em 1.6em;
+  padding: 6px 18px;
   font-size: 14px;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px black solid;
   border-radius: 3px;
-  transition: 0.4s ease;
   color: #333333;
+  background-color: blanchedalmond;
 }
 
-.sign-up {
+.login-btn {
   display: inline-block;
-  padding: 0.4em 1.6em;
+  padding: 6px 18px;
   font-size: 14px;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px black solid;
   border-radius: 3px;
-  transition: 0.4s ease;
   color: #333333;
+  background-color: blanchedalmond;
+}
+
+.sign-up-btn {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  border: 1px black solid;
+  border-radius: 3px;
+  color: #333333;
+  background-color: blanchedalmond;
 }
