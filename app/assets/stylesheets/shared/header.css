@@ -30,8 +30,8 @@
 
 .user-nickname {
   text-decoration: none;
-  font-size: 14px;
-  padding: 6px 18px;
+  font-size: 18px;
+  padding: 6px 30px;
   color: #333333;
 }
 
@@ -82,4 +82,10 @@
   border-radius: 3px;
   color: #333333;
   background-color: blanchedalmond;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 30px;
+  color: #333333;
 }
