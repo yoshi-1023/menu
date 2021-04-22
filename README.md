@@ -17,7 +17,7 @@
 |encrypted_password |string  |null: false                 |
 
 ### Association
-has_many :items
+has_many :menus
 
 ## menus
 
@@ -39,7 +39,6 @@ has_many :menu_food_stuffs
 |-------------------|------------|--------------------------------|
 |food_stuff_name    |string      |null: false                     |
 |quantity           |string      |null: false                     |
-|serving            |string      |null: false                     |
 |menu               |references  |null: false, foreign_key: true  |
 
 ### Association
