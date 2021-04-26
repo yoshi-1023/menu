@@ -63,3 +63,7 @@ gem 'pry-rails'
 gem 'mini_magick'
 
 gem 'image_processing', '~> 1.2'
+
+gem 'nested_form_fields'
+
+gem 'jquery-rails' 
