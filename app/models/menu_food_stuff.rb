@@ -13,9 +13,9 @@ class MenuFoodStuff
 
   def save
     
-    menu = Menu.create(menu_name: menu_name, recipe: recipe, user_id: user_id)
+    menu = Menu.create(menu_name: menu_name, recipe: recipe, user_id: user_id, image: image)
     
     
-    FoodStuff.create(food_stuff_name: food_stuff_name, quantity: quantity, menu_id: menu_id)
+    FoodStuff.create(food_stuff_name: food_stuff_name, quantity: quantity, menu_id: menu.id)
   end
 end
