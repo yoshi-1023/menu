@@ -1,68 +1,53 @@
 <div class="items-sell-contents">
-<div class="menus-sell-main">
+  <div class="menus-sell-main">
     <h2 class="menus-sell-title">レシピの投稿</h2>
-    <%= form_with model: @menu, url: menus_path, local: true do |f| %>
+    <%= form_with model: @menu_food_stuff, url: menus_path, local: true do |f| %>
 
-    <%# render 'shared/error_messages', model: f.object %>
+     <%= render 'shared/error_messages', model: @menu_food_stuff %>
    
 
     <%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
-        料理画像
-        <span class="indispensable">必須</span>
+        <%= f.label :image,"料理画像" %>
       </div>
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, id:"menu-image" %>
+        <%= f.file_field :image %>
       </div>
     </div>
     <%# /出品画像 %>
     <%# 商品名と商品説明 %>
     <div class="new-items">
       <div class="weight-bold-text">
-        料理名
-        <span class="indispensable">必須</span>
+       <%= f.label :menu_name,"料理名" %>
+       <%= f.text_field :menu_name, class:"items-text", id:"item-name", placeholder:"料理名" %>
       </div>
-      <%= f.text_field :menu_name, class:"items-text", id:"item-name", placeholder:"料理名" %>
-    </div>
-    <%# /商品名と商品説明 %>
-    <%# 商品の詳細 %>
-    <div class="items-detail">
-      <form method="post" action="confirm">
-      <div class="form">
-        <div class="weight-bold-text">
-          材料
+      <div class="items-detail">
+        <div class="form">
+          <div class="weight-bold-text">
+          <%= f.label :recipe, "材料" %>
+          <%= f.text_field :food_stuff_name,class:"select-box", placeholder: "例)小麦粉" %>
+          </div>
+          <div class="weight-bold-text">
+          <%= f.label :food_stuff_name, "数量"  %>
+          <%= f.text_field :quantity, class:"select-box",placeholder: "例)100g" %>
+          </div>
         </div>
-        <%= f.text_field :food_stuff_name,class:"select-box", placeholder: "例)小麦粉" %>
-        <div class="weight-bold-text">
-          数量
-        </div>
-        <%= f.text_field :quantity, class:"select-box",placeholder: "例)100g" %>
       </div>
-      </form>
-    </div>
-    <div class="add-form-btn">
+      <div class="add-form-btn">
           材料の追加する
-    </div>
-    <div class="items-explain">
-        <div class="weight-bold-text">
-          作り方
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_area :recipe, class:"items-text", id:"item-info", placeholder:"例)小麦粉を入れる" ,rows:"7" ,maxlength:"1000" %>
       </div>
-    <%# /商品の詳細 %>
-    <%# 下部ボタン %>
-    <div class="sell-btn-contents">
+      <div class="weight-bold-text">
+      <%= f.label :quantity, "作り方" %>
+      <%= f.text_area :recipe, class:"items-text", id:"item-info", placeholder:"例)小麦粉を入れる" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="sell-btn-contents">
       <%= f.submit "投稿する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
-    </div>
-    <%# /下部ボタン %>
-</div>
+      </div>
+  </div>
 <% end %>
 </div>
-
-
