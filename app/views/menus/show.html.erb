@@ -1,0 +1,18 @@
+<div class= "cooking">
+  <h1><%= @menu.menu_name %></h1>
+  <div class= "cooking-img">
+    <%= image_tag @menu.image ,class: "menu-img" %>
+  </div>
+  <div class= "cooking-recipe">
+    <h3>材料</h3>
+    <ul>
+      <li> <%= @menu.food_stuff.food_stuff_name %></li>
+    </ul>
+  </div>
+  <div class= "cooking-step">
+    <h3>作り方</h3>
+    <ol class= "ol-style">
+      <li>< <%= @menu.recipe %>/li>
+    </ol>
+  </div>
+</div>

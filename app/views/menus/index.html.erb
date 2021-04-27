@@ -8,7 +8,7 @@
     <ul class='menu-lists'>
       <% @menus.each do |menu| %>
       <li class='list'>
-        <%= link_to root_path, method: :get do %>
+        <%= link_to menu_path(menu.id), method: :get do %>
         <div class='menu-img-content'>
           <%= image_tag menu.image, class: "menu-img" %>
         </div>
