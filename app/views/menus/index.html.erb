@@ -3,7 +3,24 @@
   <div class="inner">
       <div class="greeting">
       </div>
-    <div class="card__wrapper">
+    <div class='menu-contents'>
+    <h2 class='title'>料理レシピ一覧</h2>
+    <ul class='menu-lists'>
+      <% @menus.each do |menu| %>
+      <li class='list'>
+        <%= link_to root_path, method: :get do %>
+        <div class='menu-img-content'>
+          <%= image_tag menu.image, class: "menu-img" %>
+        </div>
+        <div class='menu-info'>
+          <h3 class='menu-name'>
+            <%= menu.menu_name %>
+          </h3>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
     </div>
   </div>
 </main>
