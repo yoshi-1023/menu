@@ -28,11 +28,11 @@
       <div class="items-detail">
         <div class="form">
           <div class="weight-bold-text">
-          <%= f.label :recipe, "材料" %>
+          <%= f.label :food_stuff_name, "材料" %>
           <%= f.text_field :food_stuff_name,class:"select-box", placeholder: "例)小麦粉" %>
           </div>
           <div class="weight-bold-text">
-          <%= f.label :food_stuff_name, "数量"  %>
+          <%= f.label :quantity, "数量"  %>
           <%= f.text_field :quantity, class:"select-box",placeholder: "例)100g" %>
           </div>
         </div>
@@ -41,7 +41,7 @@
           材料を追加する
       </div>
       <div class="weight-bold-text">
-      <%= f.label :quantity, "作り方" %>
+      <%= f.label :recipe, "作り方" %>
       <%= f.text_area :recipe, class:"items-text", id:"item-info", placeholder:"例)小麦粉を入れる" ,rows:"7" ,maxlength:"1000" %>
       </div>
       <div class="add-form-btn">
