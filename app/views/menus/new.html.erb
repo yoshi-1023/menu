@@ -25,27 +25,37 @@
        <%= f.label :menu_name,"料理名" %>
        <%= f.text_field :menu_name, class:"items-text", id:"item-name", placeholder:"料理名" %>
       </div>
-      <div class="items-detail">
-        <div class="form">
+      <div id="demo-area" class="items-detail">
+        <div class="unit form">
           <div class="weight-bold-text">
-          <%= f.label :food_stuff_name, "材料" %>
-          <%= f.text_field :food_stuff_name,class:"select-box", placeholder: "例)小麦粉" %>
+            <%= f.label :food_stuff_name, "材料" %>
           </div>
-          <div class="weight-bold-text">
-          <%= f.label :quantity, "数量"  %>
+          <%= f.text_field :food_stuff_name,class:"select-box", placeholder: "例)小麦粉" %>
+          <div class="input-group-prepend">
+            <%= f.label :quantity, "数量"  %>
+          </div>
           <%= f.text_field :quantity, class:"select-box",placeholder: "例)100g" %>
+          <div class="demo-minus input-group-append">
+            <span class="btn btn-danger">-</span>
           </div>
         </div>
       </div>
-      <div class="add-form-btn">
-          材料を追加する
+      <div id="demo-plus" class="msr_btn12">
+        <a>材料を追加する</a>
       </div>
-      <div class="weight-bold-text">
-      <%= f.label :recipe, "作り方" %>
-      <%= f.text_area :recipe, class:"items-text", id:"item-info", placeholder:"例)小麦粉を入れる" ,rows:"7" ,maxlength:"1000" %>
+      <div id="demo-areas" class="items-detail">
+        <div class="units form">
+          <div class="weight-bold-text">
+            <%= f.label :recipe, "作り方" %>
+          </div>
+          <%= f.text_area :recipe, class:"items-text", id:"item-info", placeholder:"例)小麦粉を入れる" ,rows:"7" ,maxlength:"1000" %>
+          <div class="demo-minu input-group-append">
+            <span class="btn btn-danger">-</span>
+          </div>
+        </div>
       </div>
-      <div class="add-form-btn">
-          作り方を追加する
+      <div id="demo-pluss" class="msr_btn12">
+          <a>作り方を追加する</a>
       </div>
       <div class="sell-btn-contents">
       <%= f.submit "投稿する" ,class:"sell-btn" %>
@@ -54,3 +64,8 @@
   </div>
 <% end %>
 </div>
+
+
+
+
+

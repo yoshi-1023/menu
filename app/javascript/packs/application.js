@@ -8,6 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require('jquery')
+require("../food_stuff_name")
+require ("nested_form_field")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
