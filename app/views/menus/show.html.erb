@@ -6,13 +6,13 @@
   <div class= "cooking-recipe">
     <h3>材料</h3>
     <ul>
-      <li> <%= @menu.food_stuff.food_stuff_name %></li>
+      <li> <span><%= @menu.food_stuff.food_stuff_name %></span><i><%= @menu.food_stuff.quantity %></i></li>
     </ul>
   </div>
   <div class= "cooking-step">
     <h3>作り方</h3>
     <ol class= "ol-style">
-      <li>< <%= @menu.recipe %>/li>
+      <li><%= @menu.recipe %></li>
     </ol>
   </div>
 </div>
