@@ -10,6 +10,8 @@ require("channels")
 require('jquery')
 require("../food_stuff_name")
 require ("nested_form_field")
+require("@nathanvda/cocoon")
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
