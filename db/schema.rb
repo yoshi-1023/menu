@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_26_032217) do
+ActiveRecord::Schema.define(version: 2021_04_28_232238) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(version: 2021_04_26_032217) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "food_stuff_menus", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "food_stuff_id", null: false
+    t.bigint "menu_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["food_stuff_id"], name: "index_food_stuff_menus_on_food_stuff_id"
+    t.index ["menu_id"], name: "index_food_stuff_menus_on_menu_id"
   end
 
   create_table "food_stuffs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -65,6 +74,8 @@ ActiveRecord::Schema.define(version: 2021_04_26_032217) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "food_stuff_menus", "food_stuffs"
+  add_foreign_key "food_stuff_menus", "menus"
   add_foreign_key "food_stuffs", "menus"
   add_foreign_key "menus", "users"
 end
