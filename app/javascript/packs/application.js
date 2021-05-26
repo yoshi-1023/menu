@@ -9,7 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require('jquery')
 require("../food_stuff_name")
-require ("nested_form_field")
+require("nested_form_field")
 require("@nathanvda/cocoon")
 
 
